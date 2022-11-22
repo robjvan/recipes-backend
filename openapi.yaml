@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info: 
+  version: 1.0.0
+  title: Librarian API
+  description: API for accessing Librarian DB
+
+servers:
+  - url: https://api.recipebook.ca
+    description: Main (prod) server
+  - url: https://dev-api.recipebook.ca/v1
+    description: Staging server for testing
+
+components:
+  securitySchemes: 
+    BearerAuth:
+      type: http
+      scheme: bearer
+security: 
+  - BearerAuth:  []
+
+paths:
+
+  /recipes:
+    get:
+      description: Returns a list of recipes for the user
+      parameters:
+        - name: searchTerm
+          in: query
+          description: Search terms for filtering recipes
+          schema:
+            type: string
+      # requestBody: 
+      #     #TODO: FINISH THIS!
+      responses:
+        '200':
+          description: Successful response
+        '400':
+          description: Invalid request
+          content: 
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '401':
+          description: Unauthorized access
+        '404':
+          description: A user with the specified ID was not found.
+        '5XX':
+          description: Unexpected error.

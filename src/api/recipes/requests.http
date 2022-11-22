@@ -1,0 +1,18 @@
+### Get All Recipes
+GET http://localhost:3000/api/v1/recipes
+
+### Create New Recipe
+POST http://localhost:3000/api/v1/recipes
+content-Type: application/json
+
+{
+  "title": "New Recipe",
+   "servings": 4,
+   "cookTime": 15,
+   "prepTime": 5,
+   "description": "" 
+}
+
+### Delete a recipe by ID
+DELETE http://localhost:3000/api/v1/recipes/1
+

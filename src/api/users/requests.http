@@ -1,0 +1,21 @@
+### List all user accounts
+GET http://localhost:3000/api/v1/users
+
+
+### Create new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "dad@dadmail.com",
+  "password": "Asdf123!"
+}
+
+### Delete a user account
+Delete http://localhost:3000/api/v1/users/4
+
+### Get all subscriptions
+GET http://localhost:3000/api/v1/users/subscriptions
+
+### Get subscription details for user
+GET http://localhost:3000/api/v1/users/4/subscription
