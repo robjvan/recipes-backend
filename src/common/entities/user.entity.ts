@@ -11,7 +11,7 @@ import {
 } from 'typeorm';
 import { UserCountry } from './country.entity';
 import { DemographicInfo } from './demographic-info.entity';
-import { UserType } from './enums/user-type.enum';
+import { UserType } from './enum/user-type.enum';
 import { Recipe } from './recipe.entity';
 import { UserSubscription } from './user-subscription.entity';
 

@@ -2,7 +2,7 @@ import { Injectable, InternalServerErrorException, Logger, NotFoundException } f
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { User } from '../../common/entities/user.entity';
-import { UserType } from 'src/common/entities/enums/user-type.enum';
+import { UserType } from 'src/common/entities/enum/user-type.enum';
 // import { CreateUserDto } from 'src/auth/dto/create-user.dto';
 // import { UserSubscription } from '../../common/entities/user-subscription.entity';
 // import { UserCountry } from 'src/common/entities/country.entity';

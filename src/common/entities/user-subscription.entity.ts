@@ -1,4 +1,4 @@
-import { UserType } from "src/common/entities/enums/user-type.enum";
+import { UserType } from "src/common/entities/enum/user-type.enum";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 
