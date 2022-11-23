@@ -8,7 +8,7 @@ import { TypeOrmConfigService } from './common/services/typeorm.service';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './api/users/users.module';
 import { InsightsModule } from './api/insights/insights.module';
-import { ReportingModule } from './api/reporting/reporting.module';
+import { ReportingModule } from './admin/reporting/reporting.module';
 import { AdminModule } from './admin/admin.module';
 // import { getEnvPath } from './common/envs/env.helper';
 // import * as rateLimit from 'express-rate-limit';

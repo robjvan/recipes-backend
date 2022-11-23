@@ -1,6 +1,6 @@
 
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { UserPlatform } from "./enums/user-platform.enum";
+import { UserPlatform } from "./enum/user-platform.enum";
 
 @Entity()
 export class UserSignupRecord {

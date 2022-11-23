@@ -6,7 +6,7 @@ import {
   MaxLength,
   MinLength,
 } from 'class-validator';
-import { UserPlatform } from 'src/common/entities/enums/user-platform.enum';
+import { UserPlatform } from 'src/common/entities/enum/user-platform.enum';
 
 export class CreateUserDto {
   @IsEmail({ unique: true })

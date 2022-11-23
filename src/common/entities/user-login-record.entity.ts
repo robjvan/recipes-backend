@@ -1,5 +1,5 @@
 import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { UserPlatform } from "./enums/user-platform.enum";
+import { UserPlatform } from "./enum/user-platform.enum";
 import { User } from "./user.entity";
 
 @Entity()
