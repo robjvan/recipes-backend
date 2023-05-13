@@ -1,5 +1,7 @@
 # Recipes Backend
 
+Backend server for Recipes platform.  Written in TypeScript using NestJS, uses OpenAI APIs to generate and store recipes for anything the user might want.
+
 ## Features
 
 ### AI-Generated Recipes
